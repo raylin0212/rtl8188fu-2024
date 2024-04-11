@@ -1,7 +1,6 @@
 /******************************************************************************
  *
  * Copyright(c) 2007 - 2017 Realtek Corporation.
- *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2 of the GNU General Public License as
  * published by the Free Software Foundation.
@@ -18,7 +17,7 @@
 
 /***************************** INCLUDES *****************************/
 
-#if 0
+#if 1
 	#include <linux/types.h>		/* for __u* and __s* typedefs */
 	#include <linux/socket.h>		/* for "struct sockaddr" et al	*/
 	#include <linux/if.h>			/* for IFNAMSIZ and co... */
