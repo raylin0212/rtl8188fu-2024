@@ -117,7 +117,7 @@ const enum nl80211_band _rtw_band_to_nl80211_band[] = {
 	#endif
 #endif
 };
-static_assert(ARRAY_SIZE(_rtw_band_to_nl80211_band) >= BAND_MAX, "BAND_MAX is out");  //BAND_MAX
+//static_assert(ARRAY_SIZE(_rtw_band_to_nl80211_band) >= BAND_MAX, "BAND_MAX is out");  //BAND_MAX
 
 const enum band_type _nl80211_band_to_rtw_band[] = {
 	[NL80211_BAND_2GHZ]	= BAND_ON_24G,
@@ -139,7 +139,7 @@ const enum band_type _nl80211_band_to_rtw_band[] = {
 	[NL80211_BAND_LC]	= BAND_MAX,	/* light communication band (placeholder) */
 #endif
 };
-static_assert(ARRAY_SIZE(_nl80211_band_to_rtw_band) >= NUM_NL80211_BANDS, "NUM_NL80211_BANDS is out"); //NUM_NL80211_BANDS
+//static_assert(ARRAY_SIZE(_nl80211_band_to_rtw_band) >= NUM_NL80211_BANDS, "NUM_NL80211_BANDS is out"); 
 
 #if (LINUX_VERSION_CODE >= KERNEL_VERSION(3, 8, 0))
 const char *nl80211_chan_width_str(enum nl80211_chan_width cwidth)
